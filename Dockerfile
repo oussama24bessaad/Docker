@@ -1,7 +1,7 @@
-#CheckPoint Containers
-FROM node
+#Checkpoint Containers
+FROM node:6
 
-WORKDIR /app
+WORKDIR /CP
 
 COPY package*.json ./
 
@@ -14,3 +14,4 @@ ENV PORT=3000
 EXPOSE 8080
 
 CMD ["npm","start"]
+CMD ["echo","Hello Devops"]
